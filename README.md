@@ -1,3 +1,6 @@
+**本リポジトリはXI本部アジャイル開発グループによる開発自動化サービスの検証用のリポジトリです。 [こちら](https://github.com/openmrs/openmrs-core)のOSSプロジェクトをコピーして利用しています。**
+
+
 <img src="https://talk.openmrs.org/uploads/default/original/2X/f/f1ec579b0398cb04c80a54c56da219b2440fe249.jpg" alt="OpenMRS"/>
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://coveralls.io/github/openmrs/openmrs-core?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://www.codacy.com/app/openmrs/openmrs-core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openmrs/openmrs-core&amp;utm_campaign=Badge_Grade)
@@ -15,29 +18,31 @@ The mission of OpenMRS is to improve health care delivery in resource-constraine
 
 #### Table of Contents
 
-- [Build](#build)
-  - [Prerequisites](#prerequisites)
-    - [Java](#java)
-    - [Maven](#maven)
-    - [Git](#git)
-  - [Build Command](#build-command)
-  - [Deploy](#deploy)
-- [Docker build](#docker-build)
-- [Navigating the repository](#navigating-the-repository)
-- [Software Development Kit](#software-development-kit)
-- [Extending OpenMRS with Modules](#extending-openmrs-with-modules)
-- [Documentation](#documentation)
-  - [Developer guides](#developer-guides)
-  - [Wiki](#wiki)
-  - [Website](#website)
-- [Contributing](#contributing)
-  - [Code](#code)
-  - [Code Reviews](#code-reviews)
-  - [Translation](#translation)
-- [Issues](#issues)
-- [Community](#community)
-- [Support](#support)
-- [License](#license)
+- [**//// 本リポジトリはXI本部アジャイル開発グループによる開発自動化サービスの検証用のリポジトリです。 こちらのOSSプロジェクトをコピーして利用しています。////**](#-本リポジトリはxi本部アジャイル開発グループによる開発自動化サービスの検証用のリポジトリです-こちらのossプロジェクトをコピーして利用しています)
+      - [Table of Contents](#table-of-contents)
+  - [Build](#build)
+    - [Prerequisites](#prerequisites)
+      - [Java](#java)
+      - [Maven](#maven)
+      - [Git](#git)
+    - [Build Command](#build-command)
+    - [Deploy](#deploy)
+  - [Docker build](#docker-build)
+  - [Navigating the repository](#navigating-the-repository)
+  - [Software Development Kit](#software-development-kit)
+  - [Extending OpenMRS with Modules](#extending-openmrs-with-modules)
+  - [Documentation](#documentation)
+    - [Developer guides](#developer-guides)
+    - [Wiki](#wiki)
+    - [Website](#website)
+  - [Contributing](#contributing)
+    - [Code](#code)
+    - [Code Reviews](#code-reviews)
+    - [Translation](#translation)
+  - [Issues](#issues)
+  - [Community](#community)
+  - [Support](#support)
+  - [License](#license)
 
 ## Build
 
