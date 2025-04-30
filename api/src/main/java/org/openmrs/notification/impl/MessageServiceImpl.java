@@ -27,17 +27,23 @@ import org.openmrs.notification.Template;
 import org.openmrs.util.OpenmrsConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+@Service("messageServiceTarget")
 @Transactional
 public class MessageServiceImpl implements MessageService {
 	
 	private static final Logger log = LoggerFactory.getLogger(MessageServiceImpl.class);
 	
+	@Autowired
 	private TemplateDAO templateDAO;
 	
+	@Autowired(required = false)
 	private MessageSender messageSender; // Delivers message 
 	
+	@Autowired(required = false)
 	private MessagePreparator messagePreparator; // Prepares message for delivery 
 	
 	public void setTemplateDAO(TemplateDAO dao) {

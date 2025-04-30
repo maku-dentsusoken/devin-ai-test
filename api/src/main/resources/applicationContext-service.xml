@@ -590,27 +590,17 @@
 	<!--  ******************************  MESSAGE SERVICES  ****************************** -->
 
 	<!-- Messaging Service -->
-	<!--
-    <bean id="messageService" class="org.openmrs.notification.impl.MessageServiceImpl">
-        <property name="daoContext">
-        	<ref bean="daoContext"/>
-        </property>
-
-        <property name="messagePreparator">
-			<bean id="mailMessagePreparator" class="org.openmrs.notification.mail.velocity.VelocityMessagePreparator"/>
-		</property>        
-
-        <property name="messageSender">
-			<bean id="mailMessageSender" class="org.openmrs.notification.mail.MailMessageSender">
-				<property name="mailSession">
-					<bean id="mailSession" class="org.springframework.jndi.JndiObjectFactoryBean">
-					    <property name="jndiName"><value>java:comp/env/mail/OpenmrsMailSession</value></property>
-					</bean>
-				</property>
-			</bean> 		
+	<!-- Message Preparator -->
+	<bean id="mailMessagePreparator" class="org.openmrs.notification.mail.velocity.VelocityMessagePreparator"/>
+	
+	<!-- Message Sender -->
+	<bean id="mailMessageSender" class="org.openmrs.notification.mail.MailMessageSender">
+		<property name="mailSession">
+			<bean id="mailSession" class="org.springframework.jndi.JndiObjectFactoryBean">
+				<property name="jndiName"><value>java:comp/env/mail/OpenmrsMailSession</value></property>
+			</bean>
 		</property>
-    </bean>   
-	-->
+	</bean>
 
 	<!--  **************************  VALIDATOR CONFIGURATION  *************************  -->
 	<!--  Configuration for all openmrs validators                                        -->
